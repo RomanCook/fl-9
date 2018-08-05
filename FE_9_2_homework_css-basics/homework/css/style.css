@@ -1,0 +1,147 @@
+@media print {
+    #about {
+        display: none
+    }
+    .heading {
+        display: none
+    }
+    .blocks {
+        display: none
+    }
+    #ideas {
+        display: none
+    }
+    .tm-sidebar {
+        display: none
+    }
+    #contact {
+        display: none
+    }
+    .img-fluid {
+        display: none
+    }
+    .tm-main-content {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0
+    }
+    .tm-content-box h2.tm-section-title {
+        color: blue
+    }
+    .flex-2-col {
+        justify-content: center;
+        flex-wrap: wrap
+    }
+    .tm-content-box .pad {
+        padding: 0 50px
+    }
+    .tm-banner {
+        height: 300px;
+        padding: 0
+    }
+    .tm-team-description-container {
+        max-width: 100%
+    }
+}
+
+#about .boxes{
+    justify-content: center
+}
+#about .boxes .box {
+    position: relative;
+    outline: 2px solid silver
+}
+.boxes h2.tm-section-title:hover{
+    background: #41a4ff;
+    color: #ffffff;
+    font-weight: bold
+}
+
+p::first-letter {
+    color: #76cdd7;
+    font-size: 30px
+}
+
+.tm-sidebar{
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.2)
+}
+section {
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.2)
+}
+
+section:not(.blocks)::before,
+#home::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 110px 0 0;
+    border-color: #31b0d5 transparent;
+    position: absolute
+}
+
+#tmCarousel .carousel-item .carousel-content h2.tm-section-title {
+    color: gainsboro;
+    letter-spacing: 5px
+}
+
+h2 + p {
+    font-style: italic
+}
+
+div.flex-2-col:nth-child(1)>div:nth-child(1)>p {
+    text-indent: 20px;
+    line-height: 30px
+}
+
+.heading ol li a:link {
+    color: #000;
+    text-decoration: none;
+}
+.heading ol li a:visited {
+    color: silver;
+}
+.heading ol li a:hover {
+    color: #76cdd7;
+    text-decoration: underline double;
+}
+
+.blocks .box p::first-letter {
+    color: black
+}
+.blocks .box p {
+    font-size: 20px
+}
+.blocks .box:nth-child(odd) {
+    background-color: lightgray
+}
+
+
+.tm-main-nav {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.tm-sidebar .tm-nav-item {
+    border: 1px dotted silver
+}
+.tm-sidebar .tm-nav-item:last-child {
+    border-bottom: 0
+}
+.tm-sidebar .tm-nav-item:first-child {
+    border-top: 0
+}
+
+
+input[type=text] {
+    color: red
+}
+button[type=submit] {
+    color: red
+}
+
+button:hover{
+    background: #41a4ff;
+    color: #ffffff;
+    font-weight: bold
+}
