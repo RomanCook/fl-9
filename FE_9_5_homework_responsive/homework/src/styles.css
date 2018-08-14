@@ -1,0 +1,136 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+:root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d;
+
+  /* These styles are needed only for media query max-width: 575px */
+
+  /* The 'Up' button (circle button at right bottom corner) */
+  --btn-color: #fff;
+  --btn-bg-color: #5ebcff;
+
+  --navigation-border-bottom: #ddd;
+  --thumbnail-title: #484747;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: #0b1222
+}
+div, a, p, h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif
+}
+p{
+    text-indent: 20px
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end
+}
+li{
+    padding: 18px
+}
+a{
+    color: #5d5d5d;
+    text-decoration: none
+}
+a:hover{
+    color: #54597d
+}
+h1{
+    margin: 90px auto;
+    color: #ddd;
+    text-align: center;
+    font-size: 50px
+}
+section{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 50px
+}
+article{
+    color: #5d5d5d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+article:nth-child(even){
+    flex-direction: row-reverse
+}
+.moon p{
+    text-align: justify;
+    color: #5D5D5D
+}
+.moon h2{
+    font-size: 30px;
+    color: #fffafa
+}
+img{
+    width: 450px
+}
+@media screen and (max-width: 900px){
+    article{
+        margin: auto;
+        flex-direction: column;
+        width: 450px
+    }
+    article:nth-child(even){
+        flex-direction: column
+    }
+    ul{
+        justify-content: center
+    }
+    h1{
+        font-size: 45px
+    }
+}
+@media screen and (max-width: 575px) {
+    body{
+        background-color: #fff
+    }
+    .img{
+        margin: 0
+    }
+    section{
+        padding: 0 30px
+    }
+    ul{
+        flex-direction: column;
+        align-items: flex-start
+    }
+    li{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd
+    }
+    h1{
+        margin: 100px 25px;
+        font-size: 40px;
+        color: #000
+    }
+    h2{
+        background: none;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: #484747
+    }
+    img, article{
+        width: 100%
+    }
+}
