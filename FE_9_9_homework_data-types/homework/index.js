@@ -86,3 +86,24 @@ function getAdultAppleLovers(data) {
     console.log(arr)
 }
 getAdultAppleLovers();
+
+
+
+let keys = {keyOne: 1, keyTwo: 2, keyThree: 3}
+
+function _keys() {
+    let keyMass = []
+    for (let key in keys)
+        keyMass.push(key)
+    console.log(keyMass)
+}
+_keys();
+
+
+function _value() {
+    let valueMass = []
+    for (let key in keys)
+        valueMass.push(keys[key])
+    console.log(valueMass)
+}
+_value();
