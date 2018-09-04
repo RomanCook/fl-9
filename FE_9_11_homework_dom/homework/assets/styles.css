@@ -1,0 +1,29 @@
+#root {
+    width: 75%;
+    height: 500px;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#root img {
+    width: 10%;
+    height: 10%;
+    margin: 300px auto;
+}
+
+#text {
+    width: 85%;
+}
+
+#button {
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+hr {
+    width: 95%;
+    border: 1px solid black;
+    margin-top: 3%;
+}
